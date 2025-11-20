@@ -1,7 +1,5 @@
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit.Interactors; // For XRNearFarInteractor
-using UnityEngine.XR.Interaction.Toolkit.Interactables;
-using UnityEngine.XR.Interaction.Toolkit; // For XRBaseInteractable
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class ShowCalloutOnActivate : MonoBehaviour
 {
