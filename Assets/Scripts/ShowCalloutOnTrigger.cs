@@ -3,7 +3,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class ShowCalloutOnActivate : MonoBehaviour
 {
-    [SerializeField] private GameObject callout;
+    public GameObject callout;
 
     private void Awake()
     {

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ChangeAllModelTypes : MonoBehaviour
 {
-    [SerializeField] private ChangeModelType[] modelChangers;
+    public ChangeModelType[] modelChangers;
 
     public void SwitchAllModels()
     {
