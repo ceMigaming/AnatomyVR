@@ -14,6 +14,7 @@ public class TestShowCalloutScript
         testObject = new GameObject("TestObject");
         var showCalloutOnActivate = testObject.AddComponent<ShowCalloutOnActivate>();
         showCalloutOnActivate.callout = new GameObject("Callout");
+        showCalloutOnActivate.callout.SetActive(false);
     }
 
     [Test]
@@ -21,6 +22,6 @@ public class TestShowCalloutScript
     {
         var showCalloutOnActivate = testObject.GetComponent<ShowCalloutOnActivate>();
         showCalloutOnActivate.OnActivated(null);
-        Assert.AreNotSame(true, showCalloutOnActivate.callout.activeSelf);
+        Assert.True(showCalloutOnActivate.callout.activeSelf);
     }
 }
